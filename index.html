@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Styling Example</title>
+  <style>
+    /* Body styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg');
+      background-repeat: repeat;
+    }
+
+    /* Heading styles */
+    h1 {
+      font-family: "Times New Roman", Times, serif;
+      text-align: center;
+      color: #333;
+      text-shadow: 2px 2px 4px #000000;
+    }
+
+    /* Paragraph styles */
+    p {
+      font-family: Verdana, Geneva, sans-serif;
+      color: #666;
+      margin: 20px;
+    }
+
+    /* Link styles */
+    a:link,
+    a:visited {
+      color: #007bff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    a:hover,
+    a:active {
+      color: #ff6b00;
+      text-decoration: underline;
+    }
+
+    /* Custom cursor for links */
+    a {
+      cursor: url('custom_cursor.cur'), pointer;
+    }
+
+    /* Container for layers */
+    .container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-image: url('layer_background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 20px;
+    }
+
+    /* Layer styles */
+    .layer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Layer content styles */
+    .layer h2 {
+      font-family: Georgia, serif;
+      color: #333;
+    }
+
+    .layer p {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to CSS Styling Example</h1>
+
+  <p>This is a demonstration of CSS styling with various features including different font styles, background images, link styles, customized cursors, and working with layers.</p>
+
+  <div class="container">
+    <div class="layer">
+      <h2>Layered Content</h2>
+      <p>This content is placed on a layer with a semi-transparent background.</p>
+      <a href="#">Click here</a>
+    </div>
+  </div>
+
+</body>
+</html>
